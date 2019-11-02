@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <script type="application/javascript" src="../lib/browser-polyfill.js"></script>
+
+    <link rel="shortcut icon" href="../icons/logo.svg">
+
+    <% if (htmlWebpackPlugin.files.favicon) { %>
+    <link rel="shortcut icon" href="<%= htmlWebpackPlugin.files.favicon%>">
+    <% } %>
+    <% if (htmlWebpackPlugin.options.mobile) { %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <% } %>
+
+    <title><%= htmlWebpackPlugin.options.title || 'Tracking Transparency'%></title>
+
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+
+    <div id="root"></div>
+
+    <% if (htmlWebpackPlugin.options.window) { %>
+    <script>
+      <% for (var varName in htmlWebpackPlugin.options.window) { %>
+        window['<%=varName%>'] = <%= JSON.stringify(htmlWebpackPlugin.options.window[varName]) %>;
+      <% } %>
+    </script>
+    <% } %>
+  </body>
+</html>

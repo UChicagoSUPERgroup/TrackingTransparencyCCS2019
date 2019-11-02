@@ -1,0 +1,45 @@
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib64
+__pycache__
+
+# Chrome extensions
+*.crx
+.chrome-profile
+
+# Firefox Extensions
+*.xpi
+
+#vim swap files
+*.sw*
+
+#zip files
+*.zip
+
+#Mac DS_Store
+*.DS_Store
+
+node_modules
+
+# editor files
+.idea
+.vscode
+
+# jsdoc generated
+doc/jsdoc
+docs
+
+*.ipynb_checkpoints
+extension/source
+extension/ConsentForm.pdf
+web-ext-artifacts

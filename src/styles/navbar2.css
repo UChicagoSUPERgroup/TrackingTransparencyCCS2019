@@ -1,0 +1,29 @@
+/* NAVBAR OVERRIDES */
+
+/* main background color */
+.navbar {
+  background-color: #8F3931;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* height: 25px; */
+  width: 100%;
+  padding: 15px 20px 15px 20px;
+}
+
+/* hover text for brand */
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #D6D6CE;
+}
+
+/* hover text for items */
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #D6D6CE;
+}
+
+/* background for selected item */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #B1746F;
+}

@@ -1,0 +1,63 @@
+{
+    "manifest_version": 2,
+    "name": "Tracking Transparency",
+    "version": "1.0.0",
+    "applications": {
+        "gecko": {
+            "id": "trackingtransparency@super.cs.uchicago.edu",
+            "update_url": "https://super.cs.uchicago.edu/trackingtransparency/firefox/updates.json"
+        }
+    },
+    "description": "Helps you visualize your web activity and understand online advertising and tracking.",
+    "author": "University of Chicago SUPERgroup",
+    "permissions": [
+        "storage",
+        "unlimitedStorage",
+        "downloads",
+        "tabs",
+        "alarms",
+        "management",
+        "notifications",
+        "privacy",
+        "webRequest",
+        "webNavigation",
+        "<all_urls>"
+        ],
+    "browser_action": {
+        "default_icon": {
+        "19": "icons/logo19.png",
+        "38": "icons/logo38.png"
+        },
+        "default_popup": "dist/popup.html",
+        "default_title": "Tracking Transparency"
+    },
+    "background": {
+        "page": "dist/background.html",
+        "persistent": true
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "exclude_matches": ["*://*/_/chrome/newtab*"],
+            "js": [
+                "lib/browser-polyfill.js",
+                "dist/content.js"
+            ],
+            "run_at": "document_idle",
+            "all_frames": false
+        }
+    ],
+    "icons": {
+        "128": "icons/logo128.png",
+        "16": "icons/logo16.png",
+        "170": "icons/logo170.png",
+        "19": "icons/logo19.png",
+        "24": "icons/logo24.png",
+        "32": "icons/logo32.png",
+        "38": "icons/logo38.png",
+        "48": "icons/logo48.png"
+    },
+    "options_ui": {
+      "page": "dist/options.html"
+    }
+}

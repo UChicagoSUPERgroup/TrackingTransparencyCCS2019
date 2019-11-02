@@ -1,0 +1,18 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": ["chrome >= 65", "firefox >= 60"]
+      },
+      "modules": false
+    }],
+    "react"
+  ],
+  "plugins": [
+    "react-loadable/babel",
+    "syntax-dynamic-import", 
+    "transform-eval",
+    // "transform-runtime",
+    "transform-object-rest-spread"
+  ]
+}

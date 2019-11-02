@@ -1,0 +1,21 @@
+{
+    "source": {
+        "exclude": ["extension/lib", "extension/dist", "node_modules", "out", "test"],
+        "includePattern": ".+\\.js(doc|x)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "templates": {
+        "systemName"            : "Tracking Transparency Docs",
+        "systemSummary"         : "Docs for the Tracking Transparency browser extension",
+        "systemColor"           : "#8F3931",
+        "copyright"             : "Copyright © University of Chicago SUPERgroup"
+    },
+    "opts": {
+        "destination": "./docs/",
+        "encoding": "utf8",
+        "private": true,
+        "recurse": true,
+        "readme": "./README.md",
+        "template": "node_modules/foodoc/template"
+    }
+}

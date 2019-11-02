@@ -1,0 +1,31 @@
+body {
+  background: #D6D6CE;
+  overflow-x: hidden;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.containerInner {
+  padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 98%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 98%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1180px;
+  }
+}
