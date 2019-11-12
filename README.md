@@ -7,6 +7,9 @@ A browser extension to provide transparency about online tracking and the infere
 
 The extension and its effects on user understanding of web tracking were evaluated in the following publication: Weinshel et al. "Oh, the Places You've Been! User Reactions to Longitudinal Transparency About Third-Party Web Tracking and Inferencing." In Proceedings of CCS, 2019.
 
+Download precompiled Firefox build [here](https://super.cs.uchicago.edu/trackingtransparency/firefox/latest.xpi).
+
+
 <!-- TODO: include screenshot -->
 <!-- ![screenshot](extension/icons/trackers.gif) -->
 
