@@ -37,7 +37,7 @@
     "html-webpack-plugin": "^4.0.0-alpha.2",
     "jsdoc": "^3.6.2",
     "mini-css-extract-plugin": "^0.6.0",
-    "puppeteer": "1.9.*",
+    "puppeteer": "1.13.*",
     "standardx": "^2.1.0",
     "tap-spec": "^5.0.0",
     "tape": "^4.10.1",
